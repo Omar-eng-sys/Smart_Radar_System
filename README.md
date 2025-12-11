@@ -1,6 +1,6 @@
 # 📡 Radar & Laser Defense System
 
-![System Scanning](./assets/Scanning.jpg)
+![System Scanning](./assets/Scanning.png)
 
 > A fully integrated **Embedded System** that detects targets using ultrasonic waves, visualizes them on a real-time desktop GUI, and engages them with an automated laser turret.
 
@@ -37,14 +37,14 @@ This project bridges the gap between **Hardware Control** (Arduino) and **Softwa
 
 | **Hardware Build** | **Target Engagement (Attacking)** |
 |:---:|:---:|
-| ![Hardware](./assets/Implemented.jpg) | ![Attacking](./assets/Attacking.jpg) |
+| ![Hardware](./assets/Implemented.jpg) | ![Attacking](./assets/Attacking.png) |
 | *Clean wiring with acrylic base* | *Laser locked on target with Red Alert* |
 
 ## 📊 Simulation & Logic
 
 | **Circuit Diagram (Wokwi)** | **Radar Dashboard (Processing)** |
 |:---:|:---:|
-| ![Simulation](./assets/Simulation.jpg) | ![Dashboard](./assets/Scanning.jpg) |
+| ![Simulation](./assets/Simulation.png) | ![Dashboard](./assets/Scanning.png) |
 
 ## 🧠 How It Works
 
