@@ -44,7 +44,7 @@ This project bridges the gap between **Hardware Control** (Arduino) and **Softwa
 
 | **Circuit Diagram (Wokwi)** | **Radar Dashboard (Processing)** |
 |:---:|:---:|
-| ![Simulation](./assets/Simulation.png) | ![Dashboard](./assets/Scanning.png) |
+| ![Simulation](./assets/Simulation.png) | ![Dashboard](./assets/image.png) |
 
 ## 🧠 How It Works
 
