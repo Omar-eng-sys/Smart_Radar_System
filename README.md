@@ -1,6 +1,8 @@
 # 📡 Radar & Laser Defense System
 
-![System Scanning](./assets/Scanning.png)
+<p align="center">
+  <img src="./assets/Scanning.png" alt="System Scanning" width="800"/>
+</p>
 
 > A fully integrated **Embedded System** that detects targets using ultrasonic waves, visualizes them on a real-time desktop GUI, and engages them with an automated laser turret.
 
@@ -15,9 +17,9 @@ This project bridges the gap between **Hardware Control** (Arduino) and **Softwa
 ## ✨ Key Features
 
 ### 🔌 Hardware (The Brain)
-* **360° Scanning:** Uses a Servo Motor to sweep the area.
+* **360° Scanning:** Uses a high-torque Metal Gear Servo to sweep the area.
 * **Target Detection:** Utilizing an **HC-SR04 Ultrasonic Sensor** for precise distance measurement.
-* **Automated Engagement:** A secondary **Laser Turret (Servo + Laser)** automatically locks onto the target coordinates when detected.
+* **Automated Engagement:** A secondary **Laser Turret** automatically locks onto the target coordinates when detected.
 * **Alarm System:** Visual (Red/Green LEDs) and Audio (Buzzer) alarms trigger upon detection.
 
 ### 💻 Software (The Eye)
@@ -25,26 +27,31 @@ This project bridges the gap between **Hardware Control** (Arduino) and **Softwa
 * **Data Visualization:** Converts raw Serial data into a dynamic "Radar Screen" using polar-to-cartesian coordinate math.
 * **Live Feedback:** Displays the Target Angle, Distance, and Status (In Range / Out of Range).
 
-## 🛠️ Tech Stack & Components
+## 🛠️ Components List
 
-* **Microcontroller:** Arduino Uno (C++).
-* **Visualization:** Processing IDE (Java).
-* **Sensors:** Ultrasonic Sensor (HC-SR04).
-* **Actuators:** 2x SG90 Servo Motors, Laser Module, Buzzer.
-* **Communication:** Serial UART (9600 Baud Rate).
+| Component | Model / Specs | Qty |
+| :--- | :--- | :---: |
+| **Microcontroller** | Arduino Nano (ATmega328PU-TH, USB-C) | 1 |
+| **Motors** | MG996R Tower Pro (180°, Metal Gear) | 2 |
+| **Sensor** | HC-SR04 Ultrasonic Detector + Holder | 1 |
+| **Laser** | Laser Module Board HW-493 | 1 |
+| **Audio** | HW-508 Passive Buzzer Module | 1 |
+| **Visuals** | Round LED 5mm (Red & Green) | 2 |
+| **Prototyping** | Breadboard 830 Pt + 2x Mini Breadboard 170 Pt | 1 set |
+| **Wiring** | Jumper Wires (Male to Female) | Many |
 
 ## 📸 Real-World Implementation
 
 | **Hardware Build** | **Target Engagement (Attacking)** |
 |:---:|:---:|
-| ![Hardware](./assets/Implemented.jpg) | ![Attacking](./assets/Attacking.jpg) |
-| *Clean wiring with acrylic base* | *Laser locked on target with Red Alert* |
+| <img src="./assets/Implemented.jpg" alt="Hardware" width="400"/> | <img src="./assets/Attacking.jpg" alt="Attacking" width="400"/> |
+| *System powered by Arduino Nano & MG996R Servos* | *Laser locked on target with Red Alert* |
 
 ## 📊 Simulation & Logic
 
 | **Circuit Diagram (Wokwi)** | **Radar Dashboard (Processing)** |
 |:---:|:---:|
-| ![Simulation](./assets/Simulation.png) | ![Dashboard](./assets/image.png) |
+| <img src="./assets/Simulation.png" alt="Simulation" width="400"/> | <img src="./assets/Scanning.png" alt="Dashboard" width="400"/> |
 
 ## 🧠 How It Works
 
@@ -60,12 +67,12 @@ This project bridges the gap between **Hardware Control** (Arduino) and **Softwa
 ## 🚀 How to Run
 
 ### 1. Hardware Setup
-Connect the components according to the circuit diagram shown in the screenshots.
+Connect the components according to the circuit diagram. Ensure external power is used for the MG996R servos as they draw high current.
 
 ### 2. Arduino Code
 * Navigate to the `Arduino and Processing Codes` folder.
-* Open `sketch.ino` (or the final version `.ino`).
-* Upload the code to your Arduino board.
+* Open `sketch.ino`.
+* Upload the code to your **Arduino Nano**.
 
 ### 3. Processing Dashboard
 * Install **Processing IDE**.
