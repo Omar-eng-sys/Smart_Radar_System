@@ -37,7 +37,7 @@ This project bridges the gap between **Hardware Control** (Arduino) and **Softwa
 
 | **Hardware Build** | **Target Engagement (Attacking)** |
 |:---:|:---:|
-| ![Hardware](./assets/Implemented.jpg) | ![Attacking](./assets/Attacking.png) |
+| ![Hardware](./assets/Implemented.jpg) | ![Attacking](./assets/Attacking.jpg) |
 | *Clean wiring with acrylic base* | *Laser locked on target with Red Alert* |
 
 ## 📊 Simulation & Logic
